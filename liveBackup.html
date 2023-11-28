@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>John Lennon Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center> <a href=index.html><img src=LOGO.PNG class = "one"></a> </center>
+	<header>
+	</header>
+	<main>
+				<center> <div class="tabs">
+				<button class="tablinks" onclick="window.location.href='index.html'" id="tabButton">HOME</button>
+				<button class="tablinks" onclick="window.location.href='live.html'" id="tabButton">LIVE</button>
+				<button class="tablinks" onclick="window.location.href='info.html'" id="tabButton">INFO</button>
+			</div> </center>
+					<div class="container">
+													<center> <img src=LIVE.PNG class = "three"> </center>
+			 </br> <center>
+			
+			
+			 <div class = "row">
+			<a onclick="loadContent('68', this)"><img src="YEARS/68.PNG" class="four" /></a>
+			<a onclick="loadContent('69', this)"><img src="YEARS/69.PNG" class = "four"/></a>
+			<a onclick="loadContent('71', this)"><img src="YEARS/71.PNG" class = "four"/></a>
+			<a onclick="loadContent('72', this)"><img src="YEARS/72.PNG" class = "four"/></a>
+			<a onclick="loadContent('73', this)"><img src="YEARS/73.PNG" class = "four"/></a>
+			<a onclick="loadContent('74', this)"><img src="YEARS/74.PNG" class = "four"/></a>
+			<a onclick="loadContent('75', this)"><img src="YEARS/75.PNG" class = "four"/></a>
+			</div>
+
+		
+		
+			<div class="container" id="contentContainer">
+			<!-- Content will be loaded here -->
+			</div>
+		
+		
+			</center>
+		</div>
+	</main>
+	<script src="script.js"></script>
+	<script>
+	
+			function loadContent(contentType, clickedButton) {
+				var contentContainer = document.getElementById('contentContainer');
+			
+				
+			
+			switch (contentType) {
+			case '68':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='RNRC.html'" id="logButton">The Rolling Stones Rock And Roll Circus Filming - Wembley - Dec 11th, 1968</button> </br>
+				`;
+				break;
+			case '69':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='Camb.html'" id="logButton">A Natural Music Nothing Doing In London Concert - England - Mar 2nd, 1969</button> </br>
+					<button class="tablinks" onclick="window.location.href='LivePeace.html'" id="logButton">Toronto Rock and Roll Revival 1969 - Toronto - Sep 13th, 1969</button> </br>
+					<button class="tablinks" onclick="window.location.href='LiL.html'" id="logButton">UNICEF Peace For Christmas - London - Dec 15th, 1969</button> </br>
+				`;
+				break;
+			case '71':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='LiAA.html'" id="logButton">John Sinclair Freedom Rally - Ann Arbor - Dec 10-11th, 1971</button> </br>
+					<button class="tablinks" onclick="window.location.href='DF.html'" id="logButton">The David Frost Show - New York - Dec 16th, 1971</button> </br>
+					<button class="tablinks" onclick="window.location.href='LiAT.html'" id="logButton">Attica State Benefit - Apollo Theatre - Dec 17th, 1971</button> </br>
+			
+				`;
+				break;
+			case '72':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='MD1.html'" id="logButton">The Mike Douglas Show - Philadelphia - Jan 14th, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='MD2.html'" id="logButton">The Mike Douglas Show - Philadelphia - Jan 18th, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='MD3.html'" id="logButton">The Mike Douglas Show - Philadelphia - Jan 20th, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='MD4.html'" id="logButton">The Mike Douglas Show - Philadelphia - Jan 27th, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='MD5.html'" id="logButton">The Mike Douglas Show - Philadelphia - Feb 4th, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='NPCR.html'" id="logButton">National Peace Action Coalition Rally - New York - Apr 22nd, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='DC.html'" id="logButton">The Dick Cavett Show - New York - May 3rd, 1972</button> </br>
+					<button class="tablinks" onclick="window.location.href='OnetoOne2pm.html'" id="logButton">One to One - New York - Aug 30th, 1972 2PM</button> </br>
+					<button class="tablinks" onclick="window.location.href='OnetoOne8pm.html'" id="logButton">One to One - New York - Aug 30th, 1972 8PM</button> </br>
+					<button class="tablinks" onclick="window.location.href='LiJL.html'" id="logButton">Jerry Lewis Muscular Dystrophy Telethon - Las Vegas - Sep 4th, 1972</button> </br>
+				`;
+				break;
+			case '73':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='liveFem.html'" id="logButton">The Feminist Planning Conference - Cambridge - June 2nd-3rd, 1973</button> </br>
+				`;
+				break;
+			case '74':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='Elton.html'" id="logButton">Live With Elton John - New York - Nov 28th, 1974</button> </br>
+				`;
+				break;
+			case '75':
+				contentContainer.innerHTML = `
+					<button class="tablinks" onclick="window.location.href='STSL.html'" id="logButton">Salute To Sir Lew - New York - April 18th, 1975</button> </br>
+				`;
+				break;
+			// Add more cases as needed
+		}
+		// Add 'greyed-out' class to the clicked button
+        clickedButton.classList.add('greyed-out');
+		}
+	</script>
+</body>
+</html>
