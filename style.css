@@ -12,13 +12,16 @@ body {
   padding: 20px;
 }
 
+
 h1 {
   font-size: 36px;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   color: #fff;
 }
+
+
 
 table {
   width: 100%;
@@ -151,8 +154,8 @@ img.two {
 }
 
 img.three {
-  height: 75%;
-  width: 75%;
+  height: 85%;
+  width: 85%;
     display: block;
   margin: 0 auto;
    border: 4px solid #444;
@@ -161,33 +164,35 @@ img.three {
 }
 
 img.four {
-  height: 100%;
-  width: 100%;
   display: block;
-  margin: 0 auto;
-  
+  margin: 0px;
   
 }
 
 img.four:hover {
   transition: filter 0.3s ease;
   filter: brightness(50%)
+  
 }
 
 
 
 .row {
-    text-align: justify;
+    text-align: center;
+	 margin: 5px; /* Set margin to zero for the row */
+
+	
 }
 
 .row img {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
+	margin: 5px;
 }
 
 .row:after {
-    content: '';
+    //content: '';
     display: inline-block;
     width: 100%;
 }
@@ -250,7 +255,24 @@ img.four:hover {
 }
 
 
+.personnel-info {
+    margin-top: 20px; /* Adjust the margin as needed */
+    position: relative;
+	background-color: #313131;
+    left: 0;
+}
+
+.personnel-info p {
+    margin: 0;
+	margin-left: 5px;
+	color: #c7c7c7; 
+    font-size: 14px;
+}
 
 
-
-
+h2 {
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #c7c7c7; 
+    font-size: 14px;
+}
